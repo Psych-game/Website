@@ -326,7 +326,13 @@ header h1, header h2, header h3{
 /*------------------
   Hero Section
 ---------------------*/
-
+.ps_section{
+    background-color: #F0F8FF;
+}
+.ps_section p{
+     margin-right: 1rem;
+    font-size: 15px;
+}
 .hero-slider .hs-item {
 	height: 865px;
 	display: table;
