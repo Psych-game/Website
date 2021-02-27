@@ -248,7 +248,7 @@ ol {
 ---------------------*/
 
 .header-section {
-	background: #131313;
+	background: #7289da;
 	clear: both;
 	overflow: hidden;
 	padding: 18px 0;
@@ -332,6 +332,11 @@ ol {
 	position: relative;
 	top: -80px;
 	opacity: 0;
+}
+
+.hero-slider .hs-text h3 {
+	color: #fff;
+	font-weight: 400;
 }
 
 .hero-slider .hs-text h2 span {
@@ -1508,4 +1513,16 @@ ol {
 	.page-info-section .pi-content h2 {
 		font-size: 40px;
 	}
+}
+
+.signup {
+	font-size: 2em;
+}
+
+#countdown {
+	font-size: 3em;
+	color: white;
+	border: 5px solid white;
+	text-align: center;
+	padding: 20px 20px;
 }
