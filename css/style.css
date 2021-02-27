@@ -17,6 +17,7 @@ body {
 	font-smoothing: antialiased;
 }
 
+
 h1,
 h2,
 h3,
@@ -78,7 +79,10 @@ a:focus {
 ul,
 ol {
 	padding: 0;
-	margin: 0;
+    margin-top: 11px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: -242px;
 }
 
 /*---------------------
@@ -246,9 +250,14 @@ ol {
 /*------------------
   Header section
 ---------------------*/
+header h1, header h2, header h3{
+     color: #FFFFFF;
+    font-size: 55px;
+
+}
 
 .header-section {
-	background: #131313;
+	background: #7289da;
 	clear: both;
 	overflow: hidden;
 	padding: 18px 0;
@@ -262,11 +271,15 @@ ol {
 }
 
 .user-panel {
-	float: right;
-	font-weight: 500;
-	background: #ffb320;
-	padding: 8px 28px;
-	border-radius: 30px;
+	ffont-weight: 500;
+    background: #ffb320;
+    border-radius: 30px;
+    margin-top: -2px;
+    margin-bottom: -7px;
+    margin-right: -90px;
+    margin-left: 657px;
+    padding-left: 0px;
+}
 }
 
 .user-panel a {
@@ -276,7 +289,7 @@ ol {
 
 .main-menu {
 	float: right;
-	margin-right: 170px;
+	margin-right: 180px;
 }
 
 .main-menu ul {
@@ -291,13 +304,14 @@ ol {
 	display: inline-block;
 	font-size: 16px;
 	color: #fff;
-	margin-left: 35px;
+	margin-left: 25px;
 	font-weight: 500;
-	padding: 10px 5px;
+	padding: 0px 0px 0px 0px;
 }
 
 .main-menu ul li a:hover {
 	color: #ffb320;
+    
 }
 
 .header-btn {
@@ -1299,7 +1313,9 @@ ol {
 		max-width: 130px;
 	}
 	.main-menu {
-		margin-right: 25px;
+		margin-right: 155px;
+        margin-top: 0px;
+        margin-bottom: 0px; 
 	}
 	.main-menu ul li a {
 		margin-left: 15px;
