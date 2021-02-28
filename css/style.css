@@ -145,10 +145,6 @@ ol {
 	background: #ffb320;
 	cursor: pointer;
 	display: inline-block;
-
-border-radius: 100px;
-
-padding: 50px;
 }
 
 .site-btn.btn-sm {
@@ -253,7 +249,7 @@ padding: 50px;
 ---------------------*/
 
 .header-section {
-	background: #7289da;
+	background: /*#7289da*/ rgb(109,35,165);
 	clear: both;
 	overflow: hidden;
 	padding: 18px 0;
@@ -330,7 +326,6 @@ padding: 50px;
 }
 
 .hero-slider .hs-text h2 {
-	color: #fff;
 	font-weight: 400;
 	font-size: 60px;
 	margin-bottom: 30px;
@@ -340,7 +335,6 @@ padding: 50px;
 }
 
 .hero-slider .hs-text h3 {
-	color: #fff;
 	font-weight: 400;
 }
 
@@ -1521,7 +1515,24 @@ padding: 50px;
 }
 
 .signup {
-	font-size: 2em;
+	display: inline-block;
+	text-align: center;
+	font-size: 15px;
+	color: white;
+	padding: 16px 30px;
+	min-width: 153px;
+	border-radius: 50px;
+	font-weight: 500;
+	border: none;
+	background: #BB084E
+	;
+	cursor: pointer;
+	display: inline-block;
+
+	border-radius: 100px;
+
+	padding: 50px;
+	font-size: 3em;
 }
 
 #countdown {
@@ -1530,10 +1541,28 @@ padding: 50px;
 	border: 5px solid white;
 	text-align: center;
 	padding: 20px 20px;
+	border-radius: 100px;
+}
+
+.footer-top-section-nobg {
+	padding: 72px 0;
 }
 
 .card-img-top {
 	width: 100%;
 	height: 300px;
 	object-fit: cover;
+}
+
+.hs-text .col-4, .hs-text .col-2, .hs-text .col-3, .hs-text .col-5 {
+	margin: auto auto;
+}
+.hs-text {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.img-v-fluid {
+	max-height: 50px;
+	width: auto;
 }
