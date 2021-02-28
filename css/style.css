@@ -17,7 +17,6 @@ body {
 	font-smoothing: antialiased;
 }
 
-
 h1,
 h2,
 h3,
@@ -79,10 +78,7 @@ a:focus {
 ul,
 ol {
 	padding: 0;
-    margin-top: 11px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    margin-right: -242px;
+	margin: 0;
 }
 
 /*---------------------
@@ -250,11 +246,6 @@ ol {
 /*------------------
   Header section
 ---------------------*/
-header h1, header h2, header h3{
-     color: #FFFFFF;
-    font-size: 55px;
-
-}
 
 .header-section {
 	background: #7289da;
@@ -271,15 +262,11 @@ header h1, header h2, header h3{
 }
 
 .user-panel {
-	ffont-weight: 500;
-    background: #ffb320;
-    border-radius: 30px;
-    margin-top: -2px;
-    margin-bottom: -7px;
-    margin-right: -90px;
-    margin-left: 657px;
-    padding-left: 0px;
-}
+	float: right;
+	font-weight: 500;
+	background: #ffb320;
+	padding: 8px 28px;
+	border-radius: 30px;
 }
 
 .user-panel a {
@@ -289,7 +276,7 @@ header h1, header h2, header h3{
 
 .main-menu {
 	float: right;
-	margin-right: 180px;
+	margin-right: 170px;
 }
 
 .main-menu ul {
@@ -304,14 +291,13 @@ header h1, header h2, header h3{
 	display: inline-block;
 	font-size: 16px;
 	color: #fff;
-	margin-left: 25px;
+	margin-left: 35px;
 	font-weight: 500;
-	padding: 0px 0px 0px 0px;
+	padding: 10px 5px;
 }
 
 .main-menu ul li a:hover {
 	color: #ffb320;
-    
 }
 
 .header-btn {
@@ -326,13 +312,7 @@ header h1, header h2, header h3{
 /*------------------
   Hero Section
 ---------------------*/
-.ps_section{
-    background-color: #F0F8FF;
-}
-.ps_section p{
-     margin-right: 1rem;
-    font-size: 15px;
-}
+
 .hero-slider .hs-item {
 	height: 865px;
 	display: table;
@@ -352,6 +332,11 @@ header h1, header h2, header h3{
 	position: relative;
 	top: -80px;
 	opacity: 0;
+}
+
+.hero-slider .hs-text h3 {
+	color: #fff;
+	font-weight: 400;
 }
 
 .hero-slider .hs-text h2 span {
@@ -1319,9 +1304,7 @@ header h1, header h2, header h3{
 		max-width: 130px;
 	}
 	.main-menu {
-		margin-right: 155px;
-        margin-top: 0px;
-        margin-bottom: 0px; 
+		margin-right: 25px;
 	}
 	.main-menu ul li a {
 		margin-left: 15px;
@@ -1530,4 +1513,16 @@ header h1, header h2, header h3{
 	.page-info-section .pi-content h2 {
 		font-size: 40px;
 	}
+}
+
+.signup {
+	font-size: 2em;
+}
+
+#countdown {
+	font-size: 3em;
+	color: white;
+	border: 5px solid white;
+	text-align: center;
+	padding: 20px 20px;
 }

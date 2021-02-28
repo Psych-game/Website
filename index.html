@@ -3,11 +3,11 @@
 <head>
 	<title>Game Warrior Template</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Landing page of The Psycho game">
-	<meta name="keywords" content="game, psycho, teenovator">
+	<meta name="description" content="Game Warrior Template">
+	<meta name="keywords" content="warrior, game, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
-	<link href="img/" rel="shortcut icon"/>
+	<link href="img/Psych_logo.ico.png" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
@@ -35,60 +35,380 @@
 	<!-- Header section -->
 	<header class="header-section">
 		<div class="container">
-			<!-- logo -->
-            <h1>
-                Psych.  
-                
-            </h1>
-            <h2>
-                The game changer.
-            </h2>
-            <h3>
-                Change your life!
-            </h3>
-			<div class="user-panel">
-				<a href="#">Sign up now!</a>
-			</div>
-			<!-- responsive -->
+			<!-- logo 
+			<a class="site-logo" href="index.html">
+				<img src="img/logo.png" alt="">
+			</a>
+			-->
+			<!-- responsive 
 			<div class="nav-switch">
 				<i class="fa fa-bars"></i>
 			</div>
+			-->
 			<!-- site menu -->
 			<nav class="main-menu">
 				<ul>
-					<li><a href="index.html">What do we do</a></li>
-					<li><a href="review.html">Who are we</a></li>
-					<li><a href="categories.html">Count down</a></li>
+					<li><a href="#mission">What do we do?</a></li>
+					<li><a href="#aboutus">Who are we?</a></li>
+					<li><a href="#release">Countdown</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
+	<!-- Header section end -->
 
-    
-    <!-- What is Psych -->
-    <section class = "ps_section">
-        <p class="text-right">Psych is innovative game that encourages you to search and find the right way to deal with your every day struggles </p>
-    </section>
-    <!-- What is Psych end -->
+	<!-- Hero section -->
+	<section class="hero-section">
+		<div class="hero-slider owl-carousel">
+			<div class="hs-item set-bg" data-setbg="img/slider-1.jpg">
+				<div class="hs-text">
+					<div class="container">
+						<div class="row">
+							<div class="col-6">
+								<h2>Psych.</h2>
+								<h3>The game changer.<br>Change your life!<br>NOW</h3>
+							</div>
+							<div id="mission" class="col-6">
+								<h3>Psych is an innovative game<br>that helps you<br>find the right way<br>to deal with your<br>everyday struggles.</h3>
+								<br>
+								<button type="button" class="signup site-btn" data-toggle="modal" data-target="#signup">Sign up NOW</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--
+				<div class="hs-item set-bg" data-setbg="img/slider-2.jpg">
+					<div class="hs-text">
+						<div class="container">
+							<h2>The Best <span>Games</span> Out There</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada <br> lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. <br>Suspendisse cursus faucibus finibus.</p>
+							<a href="#" class="site-btn">Read More</a>
+						</div>
+					</div>
+				</div>
+			-->
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+	<!-- Latest news section 
+	<div class="latest-news-section">
+		<div class="ln-title">Latest News</div>
+		<div class="news-ticker">
+			<div class="news-ticker-contant">
+				<div class="nt-item"><span class="new">new</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+				<div class="nt-item"><span class="strategy">strategy</span>Isum dolor sit amet, consectetur adipiscing elit. </div>
+				<div class="nt-item"><span class="racing">racing</span>Isum dolor sit amet, consectetur adipiscing elit. </div>
+			</div>
+		</div>
+	</div>
+	Latest news section end -->
+
+	<!-- Feature section
+	<section class="feature-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 p-0">
+					<div class="feature-item set-bg" data-setbg="img/features/1.jpg">
+						<span class="cata new">new</span>
+						<div class="fi-content text-white">
+							<h5><a href="#">Suspendisse ut justo tem por, rutrum</a></h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							<a href="#" class="fi-comment">3 Comments</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 p-0">
+					<div class="feature-item set-bg" data-setbg="img/features/2.jpg">
+						<span class="cata strategy">strategy</span>
+						<div class="fi-content text-white">
+							<h5><a href="#">Justo tempor, rutrum erat id, molestie</a></h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							<a href="#" class="fi-comment">3 Comments</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 p-0">
+					<div class="feature-item set-bg" data-setbg="img/features/3.jpg">
+						<span class="cata new">new</span>
+						<div class="fi-content text-white">
+							<h5><a href="#">Nullam lacinia ex eleifend orci porttitor</a></h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							<a href="#" class="fi-comment">3 Comments</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 p-0">
+					<div class="feature-item set-bg" data-setbg="img/features/4.jpg">
+						<span class="cata racing">racing</span>
+						<div class="fi-content text-white">
+							<h5><a href="#">Lacinia ex eleifend orci suscipit</a></h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							<a href="#" class="fi-comment">3 Comments</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	Feature section end -->
+
+	<!-- Footer top section -->
+	<section class="footer-top-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<center>
+						<button type="button" class="signup site-btn" data-toggle="modal" data-target="#signup">Sign up NOW</button>
+						<h2 style="color:white;">Get special rewards upon releasing</h2>
+					</center>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer top section end -->
+
+	<!-- About us  -->
+	<section id="aboutus" class="recent-game-section spad set-bg" data-setbg="img/recent-game-bg.png">
+		<div class="container">
+			<div class="section-title">
+				<h2>Who are we?</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<div class="recent-game-item">
+						<div class="rgi-thumb set-bg" data-setbg="img/authors/12.jpg">
+						</div>
+						<div class="rgi-content">
+							<h5>Nadezhda Tsacheva</h5>
+							<p>Sales and Marketing </p>
+						</div>
+					</div>	
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="recent-game-item">
+						<div class="rgi-thumb set-bg" data-setbg="img/authors/10.jpg">
+						</div>
+						<div class="rgi-content">
+							<h5>Bozhidar Slavchev</h5>
+							<p>Analysis and Market Research</p>
+						</div>
+					</div>	
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="recent-game-item">
+						<div class="rgi-thumb set-bg" data-setbg="img/authors/13.jpg">
+						</div>
+						<div class="rgi-content">
+							<h5>Radostina Bogoslovova</h5>
+							<p>Design and Branding</p>
+						</div>
+					</div>	
+				</div>
+			</div><br>
+			<div class="row">
+				<div class="col-lg-2 col-md-2">
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="recent-game-item">
+						<div class="rgi-thumb set-bg" data-setbg="img/authors/11.jpg">
+						</div>
+						<div class="rgi-content">
+							<h5>Alex Tsvetanov</h5>
+							<p>Software Developer</p>
+						</div>
+					</div>	
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="recent-game-item">
+						<div class="rgi-thumb set-bg" data-setbg="img/authors/9.jpg">
+						</div>
+						<div class="rgi-content">
+							<h5>Aleksandar Georgiev</h5>
+							<p>Software Developer</p>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Recent game section end -->
+
+	<!-- Tournaments section 
+	<section class="tournaments-section spad">
+		<div class="container">
+			<div class="tournament-title">Tournaments</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="tournament-item mb-4 mb-lg-0">
+						<div class="ti-notic">Premium Tournament</div>
+						<div class="ti-content">
+							<div class="ti-thumb set-bg" data-setbg="img/tournament/1.jpg"></div>
+							<div class="ti-text">
+								<h4>World Of WarCraft</h4>
+								<ul>
+									<li><span>Tournament Beggins:</span> June 20, 2018</li>
+									<li><span>Tounament Ends:</span> July 01, 2018</li>
+									<li><span>Participants:</span> 10 teams</li>
+									<li><span>Tournament Author:</span> Admin</li>
+								</ul>
+								<p><span>Prizes:</span> 1st place $2000, 2nd place: $1000, 3rd place: $500</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="tournament-item">
+						<div class="ti-notic">Premium Tournament</div>
+						<div class="ti-content">
+							<div class="ti-thumb set-bg" data-setbg="img/tournament/2.jpg"></div>
+							<div class="ti-text">
+								<h4>DOOM</h4>
+								<ul>
+									<li><span>Tournament Beggins:</span> June 20, 2018</li>
+									<li><span>Tounament Ends:</span> July 01, 2018</li>
+									<li><span>Participants:</span> 10 teams</li>
+									<li><span>Tournament Author:</span> Admin</li>
+								</ul>
+								<p><span>Prizes:</span> 1st place $2000, 2nd place: $1000, 3rd place: $500</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	 Tournaments section bg -->
+
+	<!-- Review section 
+	<section class="review-section spad set-bg" data-setbg="img/review-bg.png">
+		<div class="container">
+			<div class="section-title">
+				<div class="cata new">new</div>
+				<h2>Recent Reviews</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="img/review/1.jpg">
+							<div class="score yellow">9.3</div>
+						</div>
+						<div class="review-text">
+							<h5>Assasin’’s Creed</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="img/review/2.jpg">
+							<div class="score purple">9.5</div>
+						</div>
+						<div class="review-text">
+							<h5>Doom</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="img/review/3.jpg">
+							<div class="score green">9.1</div>
+						</div>
+						<div class="review-text">
+							<h5>Overwatch</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg" data-setbg="img/review/4.jpg">
+							<div class="score pink">9.7</div>
+						</div>
+						<div class="review-text">
+							<h5>GTA</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	 Review section end -->
+
+	<!-- Footer top section -->
+	<section id="release" class="footer-top-section">
+		<div class="container">
+			<div class="footer-top-bg">
+				<img src="img/footer-top-bg.png" alt="">
+			</div>
+			<div class="row">
+				<div class="col-12">	
+					<div id="countdown">
+						
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-4">
+				</div>
+				<div class="col-8">
+					<div class="float-right footer-widget mb-5 mb-md-0" style="width:100%;min-height:300px; padding-top: 3em; padding-bottom: 3em;">
+						<center>
+							<h2 class="fw-title">Hurry up!</h2>
+							<button type="button" class="signup site-btn" data-toggle="modal" data-target="#signup">Sign up NOW</button>
+							<h3 class="fw-title">before everyone else</h3>
+							<h4 class="fw-title">and</h4>
+							<h3 class="fw-title">get special rewards upon releasing</h3>
+						</center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer top section end -->
 	
 	<!-- Footer section -->
 	<footer class="footer-section">
 		<div class="container">
-			<ul class="footer-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="review.html">Games</a></li>
-				<li><a href="categories.html">Blog</a></li>
-				<li><a href="community.html">Forums</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
 			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
+				Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved
+			</p>
 		</div>
 	</footer>
 	<!-- Footer section end -->
 
+	<div id="signup" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">Sign up</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>
+				</form>
+				<button type="button" class="btn btn-primary" onclick="submit();">Submit</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+			<div class="modal-footer">
+				<div id="confirm" class="text-success" style="display: none;">
+					You successfully signed up for the pre-release!
+				</div>
+			</div>
+		  </div>
+		</div>
+	  </div>
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
@@ -96,5 +416,68 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.marquee.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+		jQuery(document).ready(function($) {
+			$('a[href^="#"]').bind('click.smoothscroll', function (e) {
+				e.preventDefault();
+				var target = this.hash,
+					$target = $(target);
+
+				$('html, body').stop().animate( {
+						'scrollTop': $target.offset().top-40
+					}, 900, 'swing', function () {
+						window.location.hash = target;
+					} 
+				);
+			} );
+		} );
+		function submit() {
+			$.ajax({
+				type: "POST",
+				url: "http://79.98.111.43/game/signup",
+				data: {
+					email: $("[name=email]").val()
+				},
+				success: function() {
+					$("#confirm").css("display", "block");
+					$("#signup").modal("hide");
+				},
+				error: function() {
+					//$("#confirm").css("display", "block");
+					$("#signup").modal("hide");
+				}
+			});
+		}
+
+		// Set the date we're counting down to
+		var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
+		
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+		
+		  // Get today's date and time
+		  var now = new Date().getTime();
+		
+		  // Find the distance between now and the count down date
+		  var distance = countDownDate - now;
+		
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+		  // Display the result in the element with id="demo"
+		  document.getElementById("countdown").innerHTML = days + " days " + hours + " hours "
+		  + minutes + " minutes " + seconds + " seconds";
+		
+		  // If the count down is finished, write some text
+		  if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("countdown").innerHTML = "EXPIRED";
+		  }
+		}, 1000);
+	</script>
     </body>
 </html>
