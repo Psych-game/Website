@@ -223,14 +223,19 @@
 			</div>
 			<div class="modal-body">
 				<form class="needs-validation" novalidate>
-					<div class="form-group">
-						<div class="form-group has-validation">
-							<label for="exampleInputEmail1">Email address</label>
-							<input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
-							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-							<div class="invalid-feedback">
-								Please provide a valid email.
-							</div>
+					<div class="form-group has-validation">
+						<label for="exampleInputName1">Name</label>
+						<input type="text" class="form-control" name="name" id="exampleInputName1" placeholder="Enter your name">
+						<div class="invalid-feedback">
+							Please provide a valid name.
+						</div>
+					</div>
+					<div class="form-group has-validation">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						<div class="invalid-feedback">
+							Please provide a valid email.
 						</div>
 					</div>
 				</form>
@@ -294,16 +299,28 @@
 				console.log(email, re.test(email));
 				return re.test(email);
 			}
-			if (!validateEmail($("[name=email]").val())) {
+			if (!validateEmail($("[name=email]").val()) && $("[name=name]").val().length == 0) {
 				$("[name=email]").attr('class', 'form-control is-invalid');
+				$("[name=name]").attr('class', 'form-control is-invalid');
+			}
+			else if (!validateEmail($("[name=email]").val()) && $("[name=name]").val().length > 0) {
+				$("[name=email]").attr('class', 'form-control is-invalid');
+				$("[name=name]").attr('class', 'form-control is-valid');
+			}
+			else if (validateEmail($("[name=email]").val()) && $("[name=name]").val().length == 0) {
+				$("[name=email]").attr('class', 'form-control is-valid');
+				$("[name=name]").attr('class', 'form-control is-invalid');
 			}
 			else {
 				$("[name=email]").attr('class', 'form-control is-valid');
+				$("[name=name]").attr('class', 'form-control is-valid');
 					
 				$.ajax({
 					type: "POST",
-					url: "http://79.98.111.43/game/signup",
+					url: "http://79.98.111.43:4545/",
+					crossDomain: true,
 					data: {
+						name: $("[name=name]").val(),
 						email: $("[name=email]").val()
 					},
 					success: function() {
